@@ -1,4 +1,4 @@
-//Faça um program que leia um valor inteiro e mostre este mesmo valor nas bases hexa-
+//Faça um programa que leia um valor inteiro e mostre este mesmo valor nas bases hexa-
 //decimal e octal.
 
 #include<stdio.h>
