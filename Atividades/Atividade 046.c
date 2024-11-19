@@ -9,6 +9,6 @@
 
 int main()
 {
-    
+    setlocale
     return 0;
 }
