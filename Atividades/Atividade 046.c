@@ -11,5 +11,6 @@ int main()
 {
     setlocale(LC_ALL,"portuguese");
     int h, m, s;
+    printf("Digite o hoário: (hora:minuto:segundo)");
     return 0;
 }
