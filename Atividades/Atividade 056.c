@@ -13,6 +13,7 @@ int main()
     setlocale(LC_ALL,"Portuguese");
     float nreal;
     int n1, n2, resto, quociente;
+    int partefracio;
 
     printf("Digite um valor inteiro: ");
     scanf("%d", &n1);
@@ -20,7 +21,10 @@ int main()
     scanf("%d", &n2);
 
     resto = n1 % n2;
-    
-    printf("O número na forma real é: %.2f", fracionaria);
+    quociente = n1 / n2;
+    partefracio = quociente % 100;
+    nreal = resto + partefracio / 100.0;
+
+    printf("O número na forma real é: %.2f", nreal);
     return 0;
 }
