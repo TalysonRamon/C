@@ -12,12 +12,12 @@ imaginária.
 int main()
 {
     setlocale(LC_ALL,"Portuguese");
-    int u;
+    int u, r;
 
     printf("Digite um número complexo: ");
     scanf("%d", &u);
     printf("");
-    scanf("",);
+    scanf("", &r);
     printf("O número complexo é: %d", u);
     return 0;
 }
