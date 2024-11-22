@@ -17,6 +17,7 @@ int main()
     printf("Digite um número complexo: ");
     scanf("%d", &u);
     printf("");
+    scanf("",);
     printf("O número complexo é: %d", u);
     return 0;
 }
