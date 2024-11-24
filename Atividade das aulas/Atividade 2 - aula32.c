@@ -23,7 +23,7 @@ int main()
     b = a;
     a = c;
 
-    printf("O valor trocado para a variável a é: %.2f", b);
-    printf("O valor trocado para a variável b é: %.2f", a);
+    printf("O valor trocado para a variável a é: %.2f\n", a);
+    printf("O valor trocado para a variável b é: %.2f", b);
     return 0;
 }
