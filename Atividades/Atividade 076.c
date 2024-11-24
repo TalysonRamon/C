@@ -31,6 +31,7 @@ int main()
     sub1 = (r1 - r2);
     sub2 = - (i1 - i2);
 
+    printf("A multiplicação entre dois números complexos é:")
     printf("A soma entre os dois números complexos é: %.2f %.2fi\n", nursoma, nuisoma);
     printf("A subtração entre os dois números complexos é: %.2f - %.2fi", sub1, sub2);
     return 0;
