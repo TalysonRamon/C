@@ -13,7 +13,7 @@ imaginária.
 int main()
 {
     setlocale(LC_ALL,"Portuguese");
-    float r1, i1, r2, i2, nursoma, nuisoma;
+    float r1, i1, r2, i2;
     float sub1, sub2;
 
     printf("Digite a parte real de um número complexo: ");
@@ -28,8 +28,8 @@ int main()
     nursoma = r1 + r2;
     nuisoma = i1 + i2;
 
-    sub1 = (r1 - r2);
-    sub2 = - (i1 - i2);
+    sub1 = r1 - r2;
+    sub2 = i1 - i2;
 
     printf("A multiplicação entre dois números complexos é: %.2f %2.fi\n", nurmulti, nuimulti)
     printf("A soma entre os dois números complexos é: %.2f %.2fi\n", nursoma, nuisoma);
