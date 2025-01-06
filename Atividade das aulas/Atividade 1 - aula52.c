@@ -13,7 +13,7 @@ int main()
     printf("Digite três valores: ");
     scanf("%f%f%f", &a, &b, &c);
 
-    if (a >= b && a >= c)
+    if (a >= b && a >= c) // Primeiro if para identificar qual é o maior.
     {
         printf("O maior número é: %.2f", a);
     }
@@ -25,7 +25,7 @@ int main()
     {
         printf("O maior número é: %.2f", c);
     }
-    if (a <= b && a <= c)
+    if (a <= b && a <= c) //Segundo if para identifacar qual é o menor.
     {
         printf("\nO menor número é: %.2f", a);
     }
