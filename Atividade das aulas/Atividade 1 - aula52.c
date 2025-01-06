@@ -9,6 +9,7 @@ int main()
 {
     setlocale(LC_ALL,"Portuguese");
     float a, b, c; // Váriavel para os três valores.
+    float menor, maior;
 
     printf("Digite três valores: ");
     scanf("%f%f%f", &a, &b, &c);
@@ -37,5 +38,34 @@ int main()
     {
         printf("\nO menor número é: %.2f", c);
     }
+
+    // Segunda versão do código:
+
+    menor = a;
+    maior = a;
+
+    // Compara a váriavel "menor" com b e c.
+    if (menor > b)
+    {
+        menor = b;
+    }
+    if (menor > c)
+    {
+        menor = c;
+    }
+
+    // Compara a váriavel "maior" com b e c.
+    if (maior < b)
+    {
+        maior = b;
+    }
+    if (maior < c)
+    {
+        maior = c;
+    }
+
+    printf("\nSegunda versão do código: ");
+    printf("\nO menor valor é: %.2f\nO maior valor é: %.2f", menor, maior);
     return 0;
+
 }
