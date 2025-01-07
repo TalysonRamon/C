@@ -12,9 +12,9 @@ int main()
     setlocale(LC_ALL,"Portuguese");
     int a, i, neg = 0, pos = 0;
     printf("Digite cinco valores inteiros: \n");
-    for ( i = 5; i > 0; i--)
+    for ( i = 5; i > 0; i--) // faz a repetição da análise dos 5 números.
     {
-        scanf("%d", &a);
+        scanf("%d", &a); // scanf sozinho para nâo precisar repetir o printf 5 vezes.
 
         if (a < 0)
         {
@@ -24,12 +24,13 @@ int main()
         {
             pos += 1;
         }
-        else
+        else // else vazio, caso o usuario digite 0;
         {
 
         }
     }
 
+    // A quantidade de valores positivos e negativos: 
     printf("\nValores positivos: %d", pos);
     printf("\nValores negativos: %d", neg);
 
