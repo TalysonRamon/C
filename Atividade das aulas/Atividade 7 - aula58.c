@@ -10,7 +10,7 @@ int main()
     setlocale(LC_ALL,"Portuguese");
     char a;
 
-    printf("Digite um caractere: ");
+    printf("Digite um caracter: ");
     scanf("%c", &a);
 
     switch (a)
