@@ -55,7 +55,7 @@ int main()
         printf("O mês de Dezembro tem 31 dias.");
         break;
     default: 
-        printf("O número digitado está imcorreto!");
+        printf("O número digitado está incorreto!");
         break;
     }
 
