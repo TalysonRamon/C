@@ -11,7 +11,7 @@ int main()
     printf("Os números ímpares de 1 até 100 são: \n");
 
     // for para mostras os números ímpares.
-    for ( i = 1; i <= 100; i = i + 2)
+    for ( i = 1; i <= 100; i += 2)
     {
         printf("%d ", i);
     }
