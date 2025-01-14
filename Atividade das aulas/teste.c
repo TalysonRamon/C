@@ -1,4 +1,4 @@
-// ** ESTRUTURA DE REPETIÇÂO **
+// ** ESTRUTURA DE REPETIÇÂO "While" **
 
 #include<stdio.h>
 #include<locale.h>
@@ -6,14 +6,13 @@
 int main()
 {
     setlocale(LC_ALL,"Portuguese");
-    int i;
+    int a = 1;
 
-    printf("Os números ímpares de 1 até 100 são: \n");
-
-    // for para mostras os números ímpares.
-    for ( i = 1; i <= 100; i += 2)
+    // while para mostrar os números impares de 1 até 100.
+    while (a <= 100)
     {
-        printf("%d ", i);
+        printf("%d ", a);
+        a += 2;
     }
     
     return 0;
