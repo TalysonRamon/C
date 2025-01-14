@@ -8,15 +8,10 @@ int main()
     setlocale(LC_ALL,"Portuguese");
     int i;
 
-    //incremento
-    for ( i = 0; i <= 10; i++)
-    {
-        printf("%d ", i);
-    }
-    printf("\n");
-    
-    //decremento
-    for ( i = 10; i >= 0; i--)
+    printf("Os números ímpares de 1 até 100 são: \n");
+
+    // for para mostras os números ímpares.
+    for ( i = 1; i <= 100; i = i + 2)
     {
         printf("%d ", i);
     }
