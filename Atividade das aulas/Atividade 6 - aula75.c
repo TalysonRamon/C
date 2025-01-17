@@ -10,6 +10,7 @@ int main()
     setlocale(LC_ALL,"Portuguese");
     int i;
 
+    // o i inicia no 7, pois é o primeiro multiplo.
     for ( i = 7; i < 9999; i += 7)
     {
         printf("%d ", i);
