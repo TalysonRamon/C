@@ -11,20 +11,19 @@ int main()
     setlocale(LC_ALL,"Portuguese");
     int num, i = 1;
 
-    printf("Digite um número entre 1 e 10: ");
-    scanf("%d", &num);
-
-    if (num >= 1 && num <= 10)
+    printf("\nCALCULADORA: \n");
+    //do while para controlar o que o usúario vai digitar.
+    do
     {
-        while (i <= 10)
-        {
-            printf("%d x %d = %d \n", num, i, num * i);
-            i++;
-        }
-    }
-    else
+        printf("Digite um número entre 1 e 10: ");
+        scanf("%d", &num);
+    } while (num < 1 || num > 10);
+    
+    // While para calcular as multiplicaçôes.
+    while (i <= 10)
     {
-        printf("Número incorreto! ");
+        printf("%d x %d = %d \n", num, i, num * i);
+        i++;
     }
     
     return 0;
