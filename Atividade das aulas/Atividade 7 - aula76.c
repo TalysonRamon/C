@@ -22,9 +22,10 @@ int main()
     setlocale(LC_ALL,"Portuguese");
     int s, n1, n2;
     float d1, d2;
-
+    // do while para voltar caso o usúario não digite 0.
     do
     {
+        //system para limpar a tela depois de realizar uma operação.
         system("cls");
         printf("MENU:\n1 - Somar\n2 - subtrair\t3 - Multiplicar\n4 - Dividir\t0 - sair\nDigite sua opção: ");
         scanf("%d", &s);
