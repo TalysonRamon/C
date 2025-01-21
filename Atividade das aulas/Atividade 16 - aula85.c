@@ -25,10 +25,10 @@ int main()
         {
            soma = 0;
         }
-        
         cont++;
-    } while (soma != 10);
+    } while (soma == 10);
 
+    printf("");
     printf("\n%d", cont);
     
     return 0;
