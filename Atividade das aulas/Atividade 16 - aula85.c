@@ -9,24 +9,25 @@ números inteiros entre 1 e 10.
 int main()
 {
     setlocale(LC_ALL,"Portuguese");
-    int cont = 0, i, soma = 0;
+    int cont = 1, i, soma = 0;
 
     do
     {
-       cont++;
-       for ( i = 1; i <= 10; i++)
-       {
-        if (cont % i == 0)
+        for ( i = 1; i <= 10; i++)
         {
-            soma++;
+            if (cont % i == 0)
+            {
+                soma =+ 1;
+            }
+            
         }
-       }
-       if (soma != 10)
-       {
-         soma = 0;
-       }
+        if (soma != 10)
+        {
+           soma = 0;
+        }
         
-    } while (soma == 10);
+        cont++;
+    } while (soma != 10);
 
     printf("\n%d", cont);
     
