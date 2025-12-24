@@ -11,7 +11,7 @@ int main()
     float a, b, c; // Váriavel para os três valores.
     float menor, maior;
 
-    printf("Digite três valores: ");
+    printf("Digite tres valores: ");
     scanf("%f%f%f", &a, &b, &c);
 
     if (a >= b && a >= c) // Primeiro if para identificar qual é o maior.
