@@ -9,7 +9,7 @@ siano e calcule o ângulo entre esses dois vetores
 int main()
 {
     int x1, y1, x2, y2, pe;
-    float pv, tot, resul;
+    float pv, tot, angulo, resul;
 
     printf("Digite 2 valores para o primeiro ponto (x, y): ");
     scanf("%d%d", &x1, &y1);
@@ -22,14 +22,12 @@ int main()
 
     tot = pe / pv;
 
-    resul = (-0.946 * tot) * 100;
+    angulo = acos(tot);
 
-    if (resul < 0){
-        resul = resul * (-1);
-    }
-    
+    resul = angulo * (180.0 / M_PI);
 
-    printf("O angulo entre os dois pontos e: %.3f°", resul);
+
+    printf("O angulo entre os dois pontos e: %.2f°", resul);
 
     return 0;
 }
