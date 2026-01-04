@@ -1,6 +1,6 @@
 #include<stdio.h>
 /*
-Lista - Questão 084
+                            Lista - Questão 084
 Faça um programa para conversão monetária de reais (R$) para dólares (US$). O
 usuário deve fornecer o valor da cotação do dólar.
 */

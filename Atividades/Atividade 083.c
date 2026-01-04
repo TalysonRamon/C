@@ -1,6 +1,6 @@
 #include<stdio.h>
 /*
-                                        Lista - Questão 083
+                                     Lista - Questão 083
 Ler o saláriobase de um funcionário, calcular e mostrar o salário a receber, sabendo-se
 que esse funcionário tem gratificação de 5% sobre o salário-base, e paga imposto de 7%
 sobre o salário-base.
