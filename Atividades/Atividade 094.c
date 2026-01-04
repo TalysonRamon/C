@@ -13,10 +13,11 @@ int main()
 
     srand(time(NULL));
 
+    printf("\n");
     for ( i = 0; i < 3; i++)
     {
         int x = rand();
-        printf("\n%d\n", x);
+        printf("%d\t", x % 100);
     }
     
     return 0;
