@@ -21,6 +21,7 @@ int main()
 {
     unsigned int x, y, esc;
     float resp;
+    time_t fim, inicio;
 
     srand(time(NULL));
 
@@ -28,7 +29,7 @@ int main()
 
     esc = rand();
     esc = esc % 4;
-
+    inicio = time(NULL);
     switch (esc)
     {
     case 0:
@@ -46,8 +47,10 @@ int main()
 
         if (resp == (x + y))
             printf("Resposta correta!!\n");
-        else
-            printf("Resposta incorreta!!");
+        else{
+            printf("Resposta incorreta!!\n");
+            printf("Resposta: %d", x + y);
+        }
         break;
     case 1: 
         printf("\nSubtracao:\n");
@@ -64,8 +67,10 @@ int main()
 
         if (resp == resul)
             printf("Resposta correta!!\n");
-        else
-            printf("Resposta incorreta!!");
+        else{
+            printf("Resposta incorreta!!\n");
+            printf("Resultado: %d\n", resul);
+        }
         break;
     case 2:
         printf("\nDivisao:\n");
@@ -83,9 +88,10 @@ int main()
 
         if (resp == resu)
             printf("Resposta correta!!\n");
-        else
-            printf("Resposta incorreta!!");
-
+        else{
+            printf("Resposta incorreta!!\n");
+            printf("Resposta: %.0f", resu);
+        }
         break;
     case 3:
         printf("\nMultiplicacao:\n");
@@ -103,13 +109,21 @@ int main()
 
         if (resp == resu1)
             printf("Resposta correta!!\n");
-        else
-            printf("Resposta incorreta!!");
+        else{
+            printf("Resposta incorreta!!\n");
+            printf("Resultado: %.2f\n", resu1);
+        }
         break;
     default:
         printf("ERROR!!");
         break;
     }
+
+    fim = time(NULL);
+
+    double tempo_gasto = difftime(fim, inicio);
+
+    printf("\nTempo gasto: %.0f s", tempo_gasto);
     
     return 0;
 }
