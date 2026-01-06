@@ -15,7 +15,7 @@ int main()
     printf("Digite o total de horas extras: ");
     scanf("%f", &horasex);
 
-    printf("Salario anual: %.2f", (horas * 10) + (horasex * 15));
+    printf("Salario anual: %.2f R$", (horas * 10) + (horasex * 15));
 
     return 0;
 }
