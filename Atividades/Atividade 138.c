@@ -8,19 +8,35 @@ deve mostrar uma mensagem de acordo com a tabela 3.5.
 
 int main()
 {
-    float produto;
+    float produto, valor = 0;
 
     printf("Digite o valor do produto: ");
     scanf("%f", &produto);
 
     if (produto <= 50){
-        printf("O valor do produto com o reajuste de 5%% fica: %.2f R$", produto + (produto * 0.05));
+        valor = produto + (produto * 0.05);
+        printf("O valor do produto com o reajuste de 5%% fica: %.2f R$\n", valor);
     }
     else if (produto >= 50 && produto <= 100){
-        printf("O valor do produto com o reajuste de 10%% fica: %.2f R$", produto + (produto * 0.10));
+        valor = produto + (produto * 0.10);
+        printf("O valor do produto com o reajuste de 10%% fica: %.2f R$\n", valor);
     }
-    else 
-        printf("O valor do produto com o reajuste de 15%% fica: %.2f R$", produto + (produto * 0.15));
+    else {
+        valor = produto + (produto * 0.15);
+        printf("O valor do produto com o reajuste de 15%% fica: %.2f R$\n", valor);
+    }
 
+    if (valor <= 80){
+        printf("Barato!");
+    }
+    else if (valor > 80 && valor <= 120){
+        printf("Normal!");
+    }
+    else if (valor > 120 && valor <= 200){
+        printf("Caro!");
+    }
+    else
+        printf("Muito caro!");
+      
     return 0;
 }
