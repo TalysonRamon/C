@@ -117,9 +117,28 @@ int main()
         else
            printf("Impossivel realizar a operacao!"); 
     case 11:
-            
+        printf("Seno:\n");
+        printf("Digite um numero: ");
+        scanf("%f", &n1);
+        float rad = n1 * (3.14 / 180);
+        printf("sen(%.2f) = %.2f", n1, sin(rad));
+        break;
+    case 12:
+        printf("Cosseno:\n");
+        printf("Digite um numero: ");
+        scanf("%f", &n1);
+        float rad1 = n1 * (3.14 / 180);
+        printf("cos(%.2f) = %.2f", n1, cos(rad1));
+        break;
+    case 13:
+        printf("Tangente:\n");
+        printf("Digite um numero: ");
+        scanf("%f", &n1);
+        float rad2 = n1 * (3.14 / 180);
+        printf("tan(%.2f) = %.2f", n1, tan(rad2));
         break;
     default:
+        printf("Numero errado!Tente Novamente!");
         break;
     }
 
