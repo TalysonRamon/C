@@ -21,8 +21,8 @@ int main()
     }
     else if (a >= c && a >= b && b >= c){
         d = a;
-        c = a;
         a = c;
+        c = d;
         printf("%.2f <= %.2f <= %.2f", a, b, c);
     }
     else if (b >= a && b >= c && a >= c){
