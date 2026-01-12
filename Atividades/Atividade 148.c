@@ -99,13 +99,26 @@ int main()
         else
             printf("Raiz quadrada de %.2f = %.2f", n1, sqrt(n1));
     case 10:
-        printf("Raiz n-esima: ");
+        printf("Raiz n-esima:\n");
         printf("Digite um numero e o expoente da raiz: ");
         scanf("%f%f", &n1, &n2);
-        if (){
-            /* code */
-        }
+        int resto = n2;
+        if (n2 >= 0){
         
+            if (n1 >= 0){
+                printf("Raiz %.2f-esima de %.2f = %.2f", n2, n1, pow(n1, 1.0 / n2));
+            }
+            else if (resto % 2 == 1){
+                printf("Raiz %.2f-esima de %.2f = %.2f",n2, n1, -pow(-n1, 1.0 / n2));
+            }
+            else
+                printf("Impossivel realizar a operacao!");
+        }
+        else
+           printf("Impossivel realizar a operacao!"); 
+    case 11:
+            
+        break;
     default:
         break;
     }
