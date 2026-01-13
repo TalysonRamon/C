@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 /*
-Lista - Questão 163
+                            Lista - Questão 163
 Faça um programa que leia três pontos no plano cartesiano e verifique se esses pontos
 formam um triângulo equilátero, escaleno, isósceles ou se não formam um triângulo
 */
