@@ -24,7 +24,7 @@ int main()
         scanf("%d", &senha);
     } while (senha != 123456);
 
-    printf("\nAcesso Permitido");
+    printf("\nAcesso Permitido!");
     
     return 0;
 }
