@@ -5,11 +5,9 @@ Restrição:
 */
 
 #include<stdio.h>
-#include<locale.h>
 
 int main()
 {
-    setlocale(LC_ALL,"Portuguese");
     int i, soma = 0;
 
     // for para atualizar a variavel i.
@@ -19,6 +17,6 @@ int main()
         soma += i;
     }
     
-    printf("A soma dos números ímpares é: %d", soma);
+    printf("A soma dos números impares e: %d", soma);
     return 0;
 }
