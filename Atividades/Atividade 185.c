@@ -12,7 +12,7 @@ nal, mostre a quantidade de tentativas necessárias para acertar o número sorte
 
 int main()
 {
-    int valor, x;
+    int valor, x, cont = 0;
 
     srand(time(NULL));
 
@@ -22,6 +22,7 @@ int main()
     printf("\n\tTente descobrir o numero:\n\n");
     printf("Digite um numero entre [0,1000]: ");
     scanf("%d", &valor);
+    cont ++;
 
     while (x < valor || x > valor){
         if (valor > x){
@@ -32,9 +33,11 @@ int main()
             printf("Numero fornecido esta abaixo!\nDigite Novamente: ");
             scanf("%d", &valor);
         }
+        cont++;
     }
 
-    printf("\nParabens! Voce acertou o numero!");
+    printf("\nParabens! Voce acertou o numero!\n");
+    printf("Tentativas: %d", cont);
     
     return 0;
 }
