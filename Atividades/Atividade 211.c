@@ -9,6 +9,34 @@ Obs.: Não conte espaços ou hifens.
 
 int main()
 {
-    um, dois, tres, quatro, cinco, seis, sete, oito, nove // 2+4+4+6+5+4+4+4+4 == 37
+    int soma = 0;
+
+    // 1 a 9
+    soma += 37;
+
+    // 10 a 19
+    soma += 68;
+
+    // 20 a 99 (sem "e") — VALOR CORRETO
+    soma += 1082;
+
+    // 100
+    soma += 3; // cem
+
+    soma += 5 * 99;//cento
+
+    // palavras das centenas
+    soma += (8 + 9 + 12 + 10 + 11 + 11 + 10 + 10) * 100;
+
+    soma += 99 * 9; // contagem de "e" das centenas (cento "e" vinte e um);
+
+    // complemento das centenas (1–99 aparece 9 vezes)
+    soma += (37 + 68 + 1082) * 9;
+
+    // mil
+    soma += 3;
+
+    printf("Soma: %d\n", soma);
+
     return 0;
 }
