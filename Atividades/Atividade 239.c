@@ -14,7 +14,7 @@ int main()
 
     do
     {
-        printf("Digite:\n1 - Para converter de km/h para m/s\n2 - Para converter de m/s para km/h\n0 - Sair\nOpção: ");
+        printf("Digite:\n1 - Para converter de km/h para m/s\n2 - Para converter de m/s para km/h\n0 - Sair\nOpcao: ");
         scanf(" %d", &op);
         switch (op)
         {
