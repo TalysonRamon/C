@@ -5,22 +5,23 @@ pertencer entre o intervalo de 0 a 10). Cada nota deve ser validada separadament
 */
 
 #include<stdio.h>
-#include<locale.h>
 
 int main()
 {
-    setlocale(LC_ALL,"Portuguese");
     float n1, n2;
 
-    // do while analisar se o usúario digitou a nota no intervalo correto.
-    do
-    {
-        printf("Digite as notas das provas (entre 0 e 10): ");
-        scanf("%f%f", &n1, &n2);
-    } while (n1 < 0 || n1 > 10 || n2 < 0 || n2 > 10);
+    do{
+        printf("Digite a nota  da primeira prova (entre 0 e 10): ");
+        scanf("%f", &n1);
+    } while (n1 < 0 || n1 > 10);
 
+    do{
+        printf("Digite a nota da segunda prova (entre 0 e 10): ");
+        scanf("%f", &n2);
+    } while (n2 < 0 || n2 > 10);
+    
     // A média semestral do aluno:
-    printf("A média semestral do aluno é: %.2f", (n1 + n2) / 2.0);
+    printf("A media semestral do aluno e: %.2f", (n1 + n2) / 2.0);
     
     return 0;
 }

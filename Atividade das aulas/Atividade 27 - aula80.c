@@ -5,11 +5,9 @@ se torne menor que 0,05 gramas.
 */
 
 #include<stdio.h>
-#include<locale.h>
 
 int main()
 {
-    setlocale(LC_ALL,"Portuguese");
     float rad;
     int time = 0;
 
@@ -17,7 +15,7 @@ int main()
     scanf("%f", &rad);
 
     //While só vai parar quando a massa for menor que 0,5.
-    while (rad > 0.05)
+    while (rad >= 0.05)
     {
         //Divide a massa por 2.
         rad = rad / 2;
@@ -25,6 +23,6 @@ int main()
         time += 50;
     }
     
-    printf("O tempo necessario para a massa ficar menor que 0,05 é: %d segundos", time);
+    printf("O tempo necessario para a massa ficar menor que 0,05 e: %d segundos", time);
     return 0;
 }

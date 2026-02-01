@@ -5,21 +5,19 @@ dia, e assim por diante. Faça um programa para calcular quanto você terá ao f
 */
 
 #include<stdio.h>
-#include<locale.h>
 
 int main()
 {
-    setlocale(LC_ALL,"Portuguese");
-    int i, soma = 0, a = 1;
+    int i, soma = 1, a = 1;
 
     //for para contar o número de dias.
-    for ( i = 1; i <= 30; i++)
+    for ( i = 1; i < 30; i++)
     {
-        //duplica todos os valores e guarda a soma na variavel "soma".
-        soma += a * 2;
-        a++;
+        //duplica todos os valores e guarda a soma na variavel "a".
+        soma *= 2; // 1 - 2 - 4 - 8
+        a += soma;
     }
-    printf("A soma do dinheiro guardado é: %.2f R$", soma / 100.0);
+    printf("A soma do dinheiro guardado e: %.2f R$", a / 100.0);
     
     return 0;
 }
