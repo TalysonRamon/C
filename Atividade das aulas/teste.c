@@ -1,32 +1,29 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
-int main() {
-    int dia, mes, ano;
+//Matri z:
 
-    printf("Digite a data gregoriana (dd/mm/aaaa): ");
-    scanf("%d/%d/%d", &dia, &mes, &ano);
+int main()
+{
 
-    dia -= 13;
+    int alt[2][2], i, j;
+    
+    for ( i = 0; i < 2; i++){
+        for ( j = 0; j < 2; j++){
 
-    if (dia <= 0) {
-        mes--;
-
-        if (mes == 0) {
-            mes = 12;
-            ano--;
+            printf("Digite a posicao [%d] [%d] da matriz: ", i, j);
+            scanf("%d", &alt[i][j]);
+            alt[i][j] *= 2;
         }
-
-        // Dias do mês anterior (juliano)
-        if (mes == 1 || mes == 3 || mes == 5 || mes == 7 ||
-            mes == 8 || mes == 10 || mes == 12)
-            dia += 31;
-        else if (mes == 2)
-            dia += 28; // fevereiro no juliano
-        else
-            dia += 30;
     }
-
-    printf("Data no calendario juliano: %02d/%02d/%04d\n", dia, mes, ano);
-
+    
+    for ( i = 0; i < 2; i++){
+        for ( j = 0; j < 2; j++){
+            printf("%3d ", alt[i][j]);
+        }
+        printf("\n");
+    }
+    
     return 0;
 }
