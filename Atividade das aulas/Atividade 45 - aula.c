@@ -21,8 +21,8 @@ int main()
     }
     
     printf("\n");
-
     i = 0;
+    
     for ( j = 19; j >= 0; j--){
         v1[i] = v2[j];
         i++;
