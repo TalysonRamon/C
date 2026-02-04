@@ -1,6 +1,6 @@
 #include<stdio.h>
 /*
-                        Aula - Questão 48 | Lista IV
+                        Aula - Questão 6 | Lista IV
 Faça um programa que leia 10 números reais e os armazene em um vetor. Em seguida, leia um
 código inteiro e faça uma das ações abaixo:
 0 – finaliza o programa;

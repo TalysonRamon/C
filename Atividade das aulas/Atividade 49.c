@@ -2,7 +2,7 @@
 #include<time.h>
 #include<stdlib.h>
 /*
-                            Aula - Questão 49 | Lista IV
+                            Aula - Questão 7 | Lista IV
 Faça um programa para ordenar um vetor com 100 números inteiros. Imprima o vetor antes e
 após a ordenação.
 */
