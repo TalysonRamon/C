@@ -2,7 +2,7 @@
 #include<time.h>
 #include<stdlib.h>
 /*
-                            Aula - Questão 52 | Lista IV
+                            Aula - Questão 10 | Lista IV
 Dadas duas matrizes A e B 3 x 3, faça um programa para calcular a soma das matrizes e salvar
 em uma matriz C. Imprima as três matrizes.
 */

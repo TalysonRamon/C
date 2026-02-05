@@ -2,7 +2,7 @@
 #include<time.h>
 #include<stdlib.h>
 /*
-                    Aula - Questão 53 | Lista IV
+                    Aula - Questão 11 | Lista IV
 Faça um programa que imprima na tela a diagonal principal de uma matriz 5 x 5.
 */
 
