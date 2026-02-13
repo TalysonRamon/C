@@ -199,7 +199,7 @@ int main()
                     printf("Digite\n1 - Para a posicao [1][1]\n2 - Para a posicao [1][2]\n3 - Para a posicao [1][3]\n");
                     printf("4 - Para a posicao [2][1]\n5 - Para a posicao [2][2]\n6 - Para a posicao [2][3]\n");
                     printf("7 - Para a posicao [3][1]\n8 - Para a posicao [3][2]\n9 - Para a posicao [3][3]\nOpcao: ");
-9                   scanf("%d", &opX);
+                    scanf("%d", &opX);
                     switch (opX){
                     case 1:
                         teste = 0;
