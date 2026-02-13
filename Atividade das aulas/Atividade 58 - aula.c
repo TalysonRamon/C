@@ -154,7 +154,8 @@ int main()
                         }
                     }
                     if (teste_vazio > 0 || teste_velha >= 9){
-                        teste = 0;
+                        printf("\nJogo acabou!\n");
+                        break;
                     }
                     
                 }while(teste > 0);
@@ -187,8 +188,16 @@ int main()
                     for ( j = 0; j < 3; j++){
                         if (m[i][j] == 'X' || m[i][j] == 'O')
                             vazou++;
+                
                     }
                 }
+                if (ganhou >= 1 || vazou >= 9){
+                    top = ganhou;
+                    top2 = vazou;
+                    printf("\nJogo acabou!\n");
+                    break;
+                }
+                
         }
         while (ganhou < 1 && vazou < 9){
             for ( i = 1; i <= 1; i++){
@@ -324,6 +333,8 @@ int main()
                     }
                     if (teste_vazio > 0 || teste_velha >= 9){
                         teste = 0;
+                        printf("\nJogo acabou!\n");
+                        break;
                     }
                 }while(teste > 0);
 
@@ -353,6 +364,10 @@ int main()
                         if (m[i][j] == 'X' || m[i][j] == 'O')
                             vazou++;
                     }
+                }
+                if (ganhou >= 1 || vazou >= 9){
+                    printf("\nJogo acabou!\n");
+                    break;
                 }
                 
             }
