@@ -3,7 +3,7 @@
                                 Lista - Questão 254
 Faça um programa que leia uma matriz 3x3 de números inteiros e exiba o conteúdo na
 tela.
-Obs: ao exibir o conteúdo da matriz, procure organizar os valores em três linhas e com
+Obs.: ao exibir o conteúdo da matriz, procure organizar os valores em três linhas e com
 as colunas alinhadas.
 */
 int main()
