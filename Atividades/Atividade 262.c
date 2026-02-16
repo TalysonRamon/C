@@ -2,7 +2,7 @@
 /*
                             Lista - Questão 262
 Faça um programa que leia dois vetores de tamanho 10 com números reais e calcule o
-produto escalar entre estes vetores
+produto escalar entre estes vetores.
 */
 
 int main()
