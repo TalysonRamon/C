@@ -10,7 +10,7 @@ valores do vetor. Mostre também a maior e a menor idade armazenada no vetor.
 int main()
 {
     float media = 0, dp = 0;
-    int v[20], i, soma = 0, cont = 1;
+    int v[20], i, soma = 0, cont = 1, menor, maior;
 
     for ( i = 0; i < 20; i++){
         printf("Digite a idade do aluno %d: ", cont++);
@@ -20,10 +20,18 @@ int main()
     
     media = soma / 20.0;
 
+    maior = v[0];
+    menor = v[0];
     for ( i = 0; i < 20; i++){
         dp += pow(v[i] - media, 2);
+        if (menor > v[i]){
+            menor = v[i];
+        }
+        if (maior < v[i]){
+            maior = v[i];
+        }
     }
     
-    printf("\nMedia: %.2f\nDesvio padrao: %.2f", media, sqrt(dp / 20.0));
+    printf("\nMedia: %.2f\nDesvio padrao: %.2f\nMaior: %d\nMenor: %d", media, sqrt(dp / 20.0), maior, menor);
     return 0;
 }
