@@ -20,7 +20,10 @@ candidatos que deverão concorrer.
 
 int main()
 {
-    int votantes, op, i, v[10] = {};
+    int i, j;
+    int votantes, op, branco = 0, nulo = 0, dec = 0, ordem_decre, posic_ordem, soma = 0;
+    int v[10] = {};
+    int pos[5];
 
     printf("Qual a quantidade de votantes: ");
     scanf("%d", &votantes);
@@ -48,9 +51,34 @@ int main()
         case 98953:
             v[4]++;
             break;
+        case 0:
+            branco++;
+            break;
         default:
+            nulo++;
             break;
         }
+    }
+    
+    
+    for ( i = 0; i < 4; i++){
+        pos[i] = i;
+    }
+    
+    for ( i = 0; i < 4; i++){
+        for ( j = 0; j < 4 - i; j++){
+            if (v[j] < v[j + 1]){
+
+                ordem_decre = v[j];
+                v[j] = v[j + 1];
+                v[j + 1] = ordem_decre;
+
+                posic_ordem = pos[j];
+                pos[j] = pos[j + 1];
+                pos[j + 1] = posic_ordem;
+            }
+        }
+        soma += v[i];
     }
     
     
