@@ -19,7 +19,7 @@ int main()
     printf("Digite um texto de ate 140 caracteres: ");
     scanf("%140[^\n]", v);
 
-    printf("\nMensagem Criptografada:\n");
+    printf("\nMensagem Criptografada: ");
     for ( i = 0; v[i] != '\0'; i++){
         if ((v[i] >= 'A' && v[i] <= 'Z' ) || (v[i] >= 'a' && v[i] <= 'z')){
             if (v[i] == 'z' || v[i] == 'Z'){
